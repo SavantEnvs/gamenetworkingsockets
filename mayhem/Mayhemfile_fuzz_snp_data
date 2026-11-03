@@ -1,0 +1,8 @@
+project: savantenvs/gamenetworkingsockets
+target: fuzz_snp_data
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_snp_data/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_snp_data
+    libfuzzer: true

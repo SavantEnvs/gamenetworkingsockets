@@ -1,0 +1,4 @@
+# Generated output: build.sh rebuilds everything in place inside the image.
+build-*/
+ctrf-report.json
+# Keep .git: the image holds the full mayhem-branch history.

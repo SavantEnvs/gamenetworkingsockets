@@ -1,0 +1,8 @@
+project: savantenvs/gamenetworkingsockets
+target: fuzz_udp_listen
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_udp_listen/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_udp_listen
+    libfuzzer: true
